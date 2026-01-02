@@ -147,23 +147,59 @@
             color: #888;
             border-top: 1px solid #1f1f1f;
         }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            padding: 80px 24px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1f1f1f;
+        }
+
+        .hero-text {
+            max-width: 700px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Portfólio Game Dev</h1>
-        <p>
-            Sou Jeremias Ferreira de Lima, desenvolvedor de 18 anos, residente no Rio de Janeiro.
-            Atuo com desenvolvimento desde o 1º ano do Ensino Médio, período em que comecei a criar projetos próprios e
-            explorar diferentes áreas da tecnologia.
-            Tenho experiência no desenvolvimento de diversos jogos, participando ativamente de game jams, competições e
-            eventos culturais, sempre buscando transformar ideias em experiências interativas. Sou movido pela
-            curiosidade, gosto de experimentar novas tecnologias e aprender fazendo.
-            Ao longo do tempo, desenvolvi projetos com diferentes propostas — desde jogos experimentais até experiências
-            interativas — o que me permitiu ampliar minha visão técnica e criativa dentro do desenvolvimento digital.
-        </p>
+    <header class="hero">
+        <img src="img/Perfil.png" alt="Foto de Jeremias Ferreira de Lima" class="profile-photo">
+
+        <div class="hero-text">
+
+            <h1>Portfólio Game Dev</h1>
+            <p>
+                Sou Jeremias Ferreira de Lima, desenvolvedor de 18 anos, residente no Rio de Janeiro.
+                Atuo com desenvolvimento desde o 1º ano do Ensino Médio, período em que comecei a criar projetos
+                próprios e
+                explorar diferentes áreas da tecnologia.
+                Tenho experiência no desenvolvimento de diversos jogos, participando ativamente de game jams,
+                competições e
+                eventos culturais, sempre buscando transformar ideias em experiências interativas. Sou movido pela
+                curiosidade, gosto de experimentar novas tecnologias e aprender fazendo.
+                Ao longo do tempo, desenvolvi projetos com diferentes propostas — desde jogos experimentais até
+                experiências
+                interativas — o que me permitiu ampliar minha visão técnica e criativa dentro do desenvolvimento
+                digital.
+            </p>
     </header>
 
     <section>
@@ -220,17 +256,20 @@
                         <span class="overlay-text">Clique para jogar</span>
                     </div>
                     <h3>Museu Narrativo</h3>
-                    <p>Museu Narrativo é uma experiência virtual imersiva que recria museus no ambiente digital, focada em interação e narrativa próxima da vida real.</p>
+                    <p>Museu Narrativo é uma experiência virtual imersiva que recria museus no ambiente digital, focada
+                        em interação e narrativa próxima da vida real.</p>
                 </div>
             </a>
-            <a href="https://www.spatial.io/s/FirjanSenai-2025-68f6f778206e5aa4d34eb4f3?share=8294544887579156427" target="_blank" class="card-link">
+            <a href="https://www.spatial.io/s/FirjanSenai-2025-68f6f778206e5aa4d34eb4f3?share=8294544887579156427"
+                target="_blank" class="card-link">
                 <div class="card">
                     <div class="card-image">
                         <img src="img/MetaVision.png" alt="MetaVision">
                         <span class="overlay-text">Clique para jogar</span>
                     </div>
                     <h3>MetaVision</h3>
-                    <p>Metavision é um ambiente educacional virtual que recria escolas no mundo digital, oferecendo imersão, atividades interativas e ferramentas para professores.</p>
+                    <p>Metavision é um ambiente educacional virtual que recria escolas no mundo digital, oferecendo
+                        imersão, atividades interativas e ferramentas para professores.</p>
                 </div>
             </a>
         </div>
@@ -245,7 +284,8 @@
             </div>
             <div class="card">
                 <img class="skill-icon" src="img/JavaSharp.jpg" alt="java_sharp">
-                C#, linguagem de programação utilizada na unity, Java, linguagem que utilizo para desenvolver aplicações.
+                C#, linguagem de programação utilizada na unity, Java, linguagem que utilizo para desenvolver
+                aplicações.
             </div>
             <div class="card">
                 <img class="skill-icon" src="img/Blender.png" alt="Blender">
