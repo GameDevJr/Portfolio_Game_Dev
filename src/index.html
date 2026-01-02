@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Jeremias Ferreira de Lima</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f0f0f;
+            color: #eaeaea;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #7dd3fc;
+            text-decoration: none;
+        }
+
+        header {
+            padding: 80px 24px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            color: #b5b5b5;
+            max-width: 900px;
+            line-height: 1.8;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 64px 24px;
+            border-top: 1px solid #1f1f1f;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: #151515;
+            border-radius: 16px;
+            padding: 24px;
+            transition: transform 0.2s ease, background 0.2s ease;
+            text-align: center;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card {
+            cursor: pointer;
+        }
+
+        .card-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .overlay-text {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.1rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+
+        .card-link:hover .overlay-text {
+            opacity: 1;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            background-color: #222;
+            display: block;
+            /* fallback se a imagem não carregar */
+        }
+
+        .skill-icon {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 16px;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            background: #1a1a1a;
+        }
+
+        footer {
+            padding: 48px 24px;
+            text-align: center;
+            color: #888;
+            border-top: 1px solid #1f1f1f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portfólio Game Dev</h1>
+        <p>
+            Sou Jeremias Ferreira de Lima, desenvolvedor de 18 anos, residente no Rio de Janeiro.
+            Atuo com desenvolvimento desde o 1º ano do Ensino Médio, período em que comecei a criar projetos próprios e
+            explorar diferentes áreas da tecnologia.
+            Tenho experiência no desenvolvimento de diversos jogos, participando ativamente de game jams, competições e
+            eventos culturais, sempre buscando transformar ideias em experiências interativas. Sou movido pela
+            curiosidade, gosto de experimentar novas tecnologias e aprender fazendo.
+            Ao longo do tempo, desenvolvi projetos com diferentes propostas — desde jogos experimentais até experiências
+            interativas — o que me permitiu ampliar minha visão técnica e criativa dentro do desenvolvimento digital.
+        </p>
+    </header>
+
+    <section>
+        <h2>Projetos</h2>
+
+        <div class="grid">
+            <a href="https://jozevald.itch.io/gyrograv" target="_blank" class="card-link">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/GyroGrav.png" alt="GyroGrav">
+                        <span class="overlay-text">Clique para jogar</span>
+                    </div>
+                    <h3>GyroGrav</h3>
+                    <p>Jogo de ação espacial focado em boss fights contra robôs gigantes.</p>
+                </div>
+            </a>
+
+            <a href="https://gamedev_jr.itch.io/cat-x-portals" target="_blank" class="card-link">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/CatxPortals.png" alt="Cat x Portals">
+                        <span class="overlay-text">Clique para jogar</span>
+                    </div>
+                    <h3>AlienCat x Portals</h3>
+                    <p>Um jogo de plataforma de ação onde um gato usa portais para superar desafios.</p>
+                </div>
+            </a>
+
+            <a href="https://jozevald.itch.io/waval" target="_blank" class="card-link">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/Waval.png" alt="Waval">
+                        <span class="overlay-text">Clique para jogar</span>
+                    </div>
+                    <h3>Waval</h3>
+                    <p>Shooter 2D onde um velho herói retorna para salvar o Natal.</p>
+                </div>
+            </a>
+
+            <a href="https://gamedev_jr.itch.io/inserato" target="_blank" class="card-link">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/Inserato.png" alt="Inserato">
+                        <span class="overlay-text">Clique para jogar</span>
+                    </div>
+                    <h3>Inserato</h3>
+                    <p>Jogo de ação e cartas onde uma formiga enfrenta inimigos no formigueiro.</p>
+                </div>
+            </a>
+            <a href="https://gamedev_jr.itch.io/inserato" target="_blank" class="card-link">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/Museu.png" alt="Museu">
+                        <span class="overlay-text">Clique para jogar</span>
+                    </div>
+                    <h3>Museu Narrativo</h3>
+                    <p>Museu Narrativo é uma experiência virtual imersiva que recria museus no ambiente digital, focada em interação e narrativa próxima da vida real.</p>
+                </div>
+            </a>
+            <a href="https://www.spatial.io/s/FirjanSenai-2025-68f6f778206e5aa4d34eb4f3?share=8294544887579156427" target="_blank" class="card-link">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/MetaVision.png" alt="MetaVision">
+                        <span class="overlay-text">Clique para jogar</span>
+                    </div>
+                    <h3>MetaVision</h3>
+                    <p>Metavision é um ambiente educacional virtual que recria escolas no mundo digital, oferecendo imersão, atividades interativas e ferramentas para professores.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Habilidades</h2>
+        <div class="grid">
+            <div class="card">
+                <img class="skill-icon" src="img/Unity.png" alt="Unity">
+                Engine Unity que eu utilizo para desenvolver meus jogos
+            </div>
+            <div class="card">
+                <img class="skill-icon" src="img/JavaSharp.jpg" alt="java_sharp">
+                C#, linguagem de programação utilizada na unity, Java, linguagem que utilizo para desenvolver aplicações.
+            </div>
+            <div class="card">
+                <img class="skill-icon" src="img/Blender.png" alt="Blender">
+                Blender, software de modelagem 3D que utilizo para criar assets para meus jogos.
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+        <p>Email: jereworkgamedev@gmail.com</p>
+        <p>GitLab: https://gitlab.com/darkstrom213</p>
+        <p>GitHub: https://github.com/GameDevJr</p>
+    </section>
+
+    <footer>
+        © 2026 — Jeremias Ferreira de Lima
+    </footer>
+
+</body>
+
+</html>
